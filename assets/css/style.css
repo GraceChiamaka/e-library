@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Josefin Slab', sans-serif;
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6, .nav-link{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.w-100p{ 
+    width: 100px;
+}
+.brand-border{
+    border: 1px solid #62398B !important;
+}
+.nav-link{
+    font-size: 18px;
+    color: #62398B;
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/shelf.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    background: rgba(0,0,0,0.6);
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.btn-brand{
+    background: #62398B;
+}
+.bg-brand{
+    background: #62398B;
+}
+.btn-outline-brand{
+    background: #fff !important;
+    border: 2px solid #62398B;
+}
+.intro-text{
+    margin-top: 15rem;
+    color: #fff;
+}
+.intro-text p{
+    font-size:20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.intro-text h1{
+    font-size: 48px;
+}
+.nav-tabs .nav-item .nav-link{
+    border-radius: 0px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+.f-16{
+    font-size: 16px !important;
+}
+.f-18{
+    font-size: 18px !important;
+}
+.f-20{ 
+    font-size: 20px;
+}
+.f-sans{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.brand-text{
+    color: #62398B;
+}
+.md-form input[type="text"]:focus + label, .md-form input[type="password"]:focus + label{
+    color: #62398B !important;
+}
+.md-form input[type="text"]:focus, .md-form input[type="password"]:focus{
+    box-shadow: 0 1px 0 0 #62398B !important;
+    border-bottom: 1px solid #62398B !important;
+}
+.md-form .prefix.active {
+    color: #62398B !important;
+}
+.about-bg{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/girl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-bg-2{
+    width:100%;
+    height: 400px;
+    background-image: url('../images/boy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-text{
+    margin-top:7rem;
+}
+
+@media (min-width:767px)and (max-width:990px){
+    .about-text{
+        margin-top:1rem; 
+    }
+}
+
+@media(max-width: 600px){
+    .card{
+        margin-bottom: 1rem;
+    }
+    .about-text{
+        margin-top:4rem;
+    }
+}

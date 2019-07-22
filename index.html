@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CSMT Library</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Josefin+Slab:400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-transparent brand-border sticky-navbar">
+                <div class="container">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" class="w-100p" alt="brand logo">
+                    </a>
+                
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler brand-border pt-2" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars brand-text"></span>
+                    </button>
+                
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                
+                        <!-- Links -->
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#how_it_works" class="nav-link">How it Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-brand" type="button" href="login.html" data-toggle="modal" data-target="#basicExampleModal">Login</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                            </li>  -->
+
+                        </ul>
+                        <!-- Links -->
+                    </div>
+                    <!-- Collapsible content -->
+                </div>
+            </nav>
+            <!--/.Navbar-->
+        </header>
+        <!-- ./header -->
+        <!-- main -->
+        <main>
+            <section class="banner">
+                <div class="overlay"></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="intro-text align-middle">
+                                <h1>Welcome to E-Library</h1>
+                                <p >Gain access to unlimited number of books</p>
+                                <p>Login to get Started <i class="fa fa-caret-down"></i></p>
+                                <button class="btn btn-lg btn-brand white-text mt-4 px-5" data-toggle="modal" data-target="#basicExampleModal"><b>Login</b></button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <!-- Modal -->
+                <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog cascading-modal" role="document">
+                        <div class="modal-content">
+                            <!--Modal cascading tabs-->
+                            <div class="modal-c-tabs">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs md-tabs tabs-2 bg-brand " role="tablist">
+                                    <li class="nav-item waves-effect waves-light">
+                                    <a class="nav-link active border-0" data-toggle="tab" href="#panel17" role="tab">
+                                        <i class="fa fa-user mr-1"></i> Login</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panels -->
+                                <div class="tab-content">
+                                    <!--Panel 17-->
+                                    <div class="tab-pane fade in show active" id="panel17" role="tabpanel">
+                                        <!--Body-->
+                                        <div class="modal-body mb-1">
+                                            <div class="md-form form-sm mb-4">
+                                                <i class="fa fa-envelope prefix"></i>
+                                                <input type="text" id="form2" class="form-control f-16 form-control-sm">
+                                                <label for="form2" class="f-18">Your email</label>
+                                            </div>
+                            
+                                            <div class="md-form form-sm mt-5">
+                                                <i class="fa fa-lock prefix"></i>
+                                                <input type="password" id="form3" class="form-control f-16 form-control-sm">
+                                                <label for="form3" class="f-18">Your password</label>
+                                            </div>
+                                            <div class="text-center mt-4">
+                                                <button class="btn btn-brand waves-effect waves-light">Log in
+                                                    <i class="fa fa-sign-in ml-1"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--Footer-->
+                                        <div class="modal-footer">
+                                            <div class="options text-center text-md-right mt-1">
+                                                
+                                                <p class="f-18">Forgot
+                                                    <a href="forgot_password.html" class="brand-text">Password?</a>
+                                                </p>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-brand brand-text waves-effect ml-auto" data-dismiss="modal">Close</button>
+                                        </div>
+                        
+                                    </div>
+                                    <!--/.Panel 7-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./modal -->
+                
+            </section>
+            <section class="about mt-5 mb-5" id="about">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <div class="about-text">
+                                <h3>Some Text Heading</h3>
+                                <p class="f-16 f-sans">
+                                    Lorem ipsum dolor sit, 
+                                    amet consectetur adipisicing elit. Ullam mollitia iste ea saepe deserunt, 
+                                    ipsam numquam nobis laboriosam recusandae 
+                                    dignissimos praesentium, harum consequuntur quos minus enim quam, 
+                                    blanditiis quae obcaecati.
+
+                                    Lorem ipsum dolor sit, 
+                                    amet consectetur adipisicing elit. Ullam mollitia iste ea saepe deserunt, 
+                                    ipsam numquam nobis laboriosam recusandae 
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-8">
+                            <div class="about-bg"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="about-bg-2"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-text">
+                                <h3>Some Text Heading</h3>
+                                <p class="f-16 f-sans">
+                                    Lorem ipsum dolor sit, 
+                                    amet consectetur adipisicing elit. Ullam mollitia iste ea saepe deserunt, 
+                                    ipsam numquam nobis laboriosam recusandae 
+                                    dignissimos praesentium, harum consequuntur quos minus enim quam, 
+                                    blanditiis quae obcaecati.
+
+                                    Lorem ipsum dolor sit, 
+                                    amet consectetur adipisicing elit. Ullam mollitia iste ea saepe deserunt, 
+                                    ipsam numquam nobis laboriosam recusandae 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="works mb-5" id="how_it_works">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-9">
+                            <h1>Plan your Reading Goals for the School Semester</h1>
+                        </div>
+                    </div>
+                   
+                    <div class="row mt-5">
+                        
+                    </div>
+                    <div class="row mt-5 justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="card ">
+                                        <div class="card-header bg-brand white-text py-4">
+                                            <h3>
+                                                <i class="fa fa-user"></i>
+                                                <br>
+                                                Log In to your Account
+                                            </h3>
+                                        </div>
+                                        <div class="card-body py-5">
+                                            <p class="f-20">
+                                                Take the first step this term and log into your e-library account
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7"></div>
+
+                                <div class="col-md-7"></div>
+                                <div class="col-md-5">
+                                    <div class="card ">
+                                        <div class="card-header bg-brand white-text py-4">
+                                            <h3>
+                                                <i class="fa fa-plus"></i>
+                                                <br>
+                                                Add Books to Your Collection
+                                            </h3>
+                                        </div>
+                                        <div class="card-body py-5">
+                                            <p class="f-20">
+                                                Get the books you want to read and add them to your collection
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card ">
+                                <div class="card-header bg-brand white-text">
+                                    <h3>
+                                        <i class="fa fa-shelf"></i>
+                                        Read
+                                    </h3>
+                                </div>
+                                <div class="card-body py-5">
+                                    <p class="f-20">
+                                        Read the books in your collection at your convience and to your timetable
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7"></div>
+                    </div>                    
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="page-footer  bg-brand pt-4">
+                <!-- Footer Links -->
+                <div class="container-fluid text-center text-md-left">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-md-0 mt-3">
+                            <!-- Content -->
+                            <h5 class="text-uppercase">
+                                <a href="index.html">
+                                    <img src="assets/images/logo.png" class="w-100p" alt="">
+                                </a>
+                            </h5>
+                            <p>CSMT: The school for your child best interest</p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="clearfix w-100 d-md-none pb-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <!-- Links -->
+                            <h5 class="text-uppercase">NOTICE BOARD</h5>
+                            <ul class="list-unstyled f-16">
+                                <li>
+                                    <a href="">Admissions</a>
+                                </li>
+                                <li>
+                                    <a href="">Entrance Exams</a>
+                                </li>
+                                <li>
+                                    <a href="">School Trip</a>
+                                </li>
+                                <li>
+                                    <a href="">Library</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <!-- Links -->
+                            <h5 class="text-uppercase">Contact US</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p class="f-16">Suite 14 & 23 Ase complex, Vetenary junction, Mokola Ibadan, Oyo State Nigeria</p>
+                                </li>
+                                <li>
+                                    <p class="f-16">hello@csmt.com</p>
+                                </li>
+                                <li>
+                                    <p class="f-16">
+                                        08092816959 
+                                        <br>
+                                        08180997078
+                                    </p>
+                                </li>
+                                
+                            </ul>
+            
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid row -->
+                    </div>
+                    <!-- Footer Links -->
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3 f-16">© 2019 Copyright:
+                        <a href="https://mdbootstrap.com/education/bootstrap/"> CSMT.com</a>
+                    </div>
+                    <!-- Copyright -->
+                </div>
+            </footer>
+            <!-- ./footer -->
+        </main>
+        <!-- main -->
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    </body>
+</html>
