@@ -6,14 +6,15 @@
 html, body{
     width: 100%;
     font-size: 14px;
-    font-family: 'Josefin Slab', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
 }
-h1, h2, h3, h4, h5, h6, .nav-link{
-    font-family: 'Josefin Sans', sans-serif;
-}
+
 .w-100p{ 
     width: 100px;
+}
+.fw-med{
+    font-weight: 500;
 }
 .brand-border{
     border: 1px solid #62398B !important;
@@ -53,7 +54,6 @@ h1, h2, h3, h4, h5, h6, .nav-link{
 }
 .intro-text p{
     font-size:20px;
-    font-family: 'Josefin Sans', sans-serif;
 }
 .intro-text h1{
     font-size: 48px;
@@ -76,7 +76,10 @@ h1, h2, h3, h4, h5, h6, .nav-link{
     font-family: 'Josefin Sans', sans-serif;
 }
 .brand-text{
-    color: #62398B;
+    color: #62398B !important;
+}
+.h-279p{
+    height: 279px !important;
 }
 .md-form input[type="text"]:focus + label, .md-form input[type="password"]:focus + label{
     color: #62398B !important;
@@ -87,6 +90,15 @@ h1, h2, h3, h4, h5, h6, .nav-link{
 }
 .md-form .prefix.active {
     color: #62398B !important;
+}
+.md-tabs .nav-link.active {
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+    transition: all 1s;
+    border-radius: .25rem;
+}
+.nav-tabs .nav-item{
+    padding: 1rem 0.5rem;
 }
 .about-bg{
     width: 100%;
@@ -105,6 +117,9 @@ h1, h2, h3, h4, h5, h6, .nav-link{
 }
 .about-text{
     margin-top:7rem;
+}
+.card a.btn:hover{
+    color: #fff;
 }
 
 @media (min-width:767px)and (max-width:990px){

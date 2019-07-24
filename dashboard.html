@@ -13,7 +13,7 @@
         <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
         <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Josefin+Slab:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
@@ -37,21 +37,21 @@
                     <div class="collapse navbar-collapse" id="basicExampleNav">
                         <!-- Links -->
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home
+                            <!-- <li class="nav-item active fw-med">
+                                <a class="nav-link" href="index.html">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
+                            </li> -->
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown fw-med brand-text">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><img src="assets/images/user.png" alt=""></a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Reminders</a>
+                                    <a class="dropdown-item" href="#">Notifications</a>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#how_it_works" class="nav-link">How it Works</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn-outline-brand" type="button" href="login.html" data-toggle="modal" data-target="#basicExampleModal">Login</a>
-                            </li>
-
                         </ul>
                         <!-- Links -->
                     </div>
@@ -62,81 +62,147 @@
         </header>
         <!-- ./header -->
         <!-- main -->
-        <main>  
-            <!-- Footer -->
-            <footer class="page-footer  bg-brand pt-4">
-                <!-- Footer Links -->
-                <div class="container-fluid text-center text-md-left">
-                    <!-- Grid row -->
-                    <div class="row">
-                        <!-- Grid column -->
-                        <div class="col-md-6 mt-md-0 mt-3">
-                            <!-- Content -->
-                            <h5 class="text-uppercase">
-                                <a href="index.html">
-                                    <img src="assets/images/logo.png" class="w-100p" alt="">
-                                </a>
-                            </h5>
-                            <p>CSMT: The school for your child best interest</p>
+        <main class="my-5">  
+            <div class="container-fluid py-5">
+                <div class="row my-5 ">
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- Card image -->
+                            <img class="card-img-top w-100" src="assets/images/shelf.jpg"
+                                alt="library">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title"><a class="brand-text" >Library</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the 
+                                    bulk of the card's content.
+                                </p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-brand btn-waves">Go To Library <i class="fa fa-sign-in"></i></a>
+                            </div>
                         </div>
-                        <!-- Grid column -->
-                        <hr class="clearfix w-100 d-md-none pb-3">
-                        <!-- Grid column -->
-                        <div class="col-md-3 mb-md-0 mb-3">
-                            <!-- Links -->
-                            <h5 class="text-uppercase">NOTICE BOARD</h5>
-                            <ul class="list-unstyled f-16">
-                                <li>
-                                    <a href="">Admissions</a>
-                                </li>
-                                <li>
-                                    <a href="">Entrance Exams</a>
-                                </li>
-                                <li>
-                                    <a href="">School Trip</a>
-                                </li>
-                                <li>
-                                    <a href="">Library</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Grid column -->
-                        <div class="col-md-3 mb-md-0 mb-3">
-                            <!-- Links -->
-                            <h5 class="text-uppercase">Contact US</h5>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <p class="f-16">Suite 14 & 23 Ase complex, Vetenary junction, Mokola Ibadan, Oyo State Nigeria</p>
-                                </li>
-                                <li>
-                                    <p class="f-16">hello@csmt.com</p>
-                                </li>
-                                <li>
-                                    <p class="f-16">
-                                        08092816959 
-                                        <br>
-                                        08180997078
-                                    </p>
-                                </li>
-                                
-                            </ul>
-            
-                        </div>
-                        <!-- Grid column -->
-                        <!-- Grid row -->
+                        <!-- Card -->
                     </div>
-                    <!-- Footer Links -->
-                    <!-- Copyright -->
-                    <div class="footer-copyright text-center py-3 f-16">© 2019 Copyright:
-                        <a href="https://mdbootstrap.com/education/bootstrap/"> CSMT.com</a>
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- Card image -->
+                            <img class="card-img-top w-100 h-279p" src="assets/images/frontdesk.jpg"
+                                alt="library id request">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title"><a class="brand-text" >Library ID Requests</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the 
+                                    bulk of the card's content.
+                                </p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-brand btn-waves">View All Requests <i class="fa fa-sign-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- Card -->
                     </div>
-                    <!-- Copyright -->
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- Card image -->
+                            <img class="card-img-top w-100" src="assets/images/shelving.jpg" 
+                                alt="library">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title"><a class="brand-text" >Teaching Materials</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the 
+                                    bulk of the card's content.
+                                </p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-brand btn-waves">Upload New Materials <i class="fa fa-sign-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
                 </div>
-            </footer>
-            <!-- ./footer -->
+            </div>
         </main>
         <!-- main -->
-
+        <!-- Footer -->
+        <footer class="page-footer  bg-brand pt-4">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="w-100p" alt="">
+                            </a>
+                        </h5>
+                        <p>CSMT: The school for your child best interest</p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase">NOTICE BOARD</h5>
+                        <ul class="list-unstyled f-16">
+                            <li>
+                                <a href="">Admissions</a>
+                            </li>
+                            <li>
+                                <a href="">Entrance Exams</a>
+                            </li>
+                            <li>
+                                <a href="">School Trip</a>
+                            </li>
+                            <li>
+                                <a href="">Library</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Contact US</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="f-16">Suite 14 & 23 Ase complex, Vetenary junction, Mokola Ibadan, Oyo State Nigeria</p>
+                            </li>
+                            <li>
+                                <p class="f-16">hello@csmt.com</p>
+                            </li>
+                            <li>
+                                <p class="f-16">
+                                    08092816959 
+                                    <br>
+                                    08180997078
+                                </p>
+                            </li>
+                            
+                        </ul>
+        
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid row -->
+                </div>
+                <!-- Footer Links -->
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 f-16">© 2019 Copyright:
+                    <a href="https://mdbootstrap.com/education/bootstrap/"> CSMT.com</a>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+        <!-- ./footer -->
         <!-- JQuery -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Bootstrap tooltips -->
