@@ -81,10 +81,98 @@
                                     bulk of the card's content.
                                 </p>
                                 <!-- Button -->
-                                <a href="#" class="btn btn-brand btn-waves">Go To Library <i class="fa fa-sign-in"></i></a>
+                                <a type="button" class="btn btn-brand btn-waves white-text" data-toggle="modal" data-target="#libraryModal">Go To Library <i class="fa fa-sign-in"></i></a>
                             </div>
                         </div>
                         <!-- Card -->
+                        <!-- Modal -->
+                        <!-- Central Modal Small -->
+                        <div class="modal fade" id="libraryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                            <!-- Change class .modal-sm to change the size of the modal -->
+                            <div class="modal-dialog modal-fluid" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title w-100 brand-text fw-med" id="myModalLabel">CSMT E-Library</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="brand-text fw-med">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <form action="" class="row">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <select class="browser-default custom-select">
+                                                            <option disabled>Select an option</option>
+                                                            <option value="jss1">JSS1</option>
+                                                            <option value="jss2">JSS2</option>
+                                                            <option value="jss3">JSS3</option>
+                                                            <option value="math">Mathematic</option>
+                                                            <option value="bio">Biology</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <select class="browser-default custom-select">
+                                                            <option disabled>Select an option</option>
+                                                            <option value="hard">Hard Copy</option>
+                                                            <option value="soft">Soft Copy</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <!-- Search form -->
+                                                        <div class="md-form mt-0">
+                                                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <button class="btn btn-brand btn-block white-text">Apply</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col"></th>
+                                                                    <th scope="col"></th>
+                                                                    <th scope="col"></th>
+                                                                    <th scope="col"></th>
+                                                                    <th scope="col"></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="row"></td>
+                                                                    <td scope="row"></td>
+                                                                    <td scope="row"></td>
+                                                                    <td scope="row"></td>
+                                                                    <td scope="row"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary btn-md">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Central Modal Small -->
+                        <!-- ./Modal -->
                     </div>
                     <div class="col-md-4">
                         <!-- Card -->
@@ -211,5 +299,6 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    
     </body>
 </html>

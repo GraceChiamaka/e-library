@@ -122,6 +122,19 @@ html, body{
     color: #fff;
 }
 
+.custom-select:focus{
+    border-color: #62398b !important;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 5px rgba(98, 57, 139,.5);
+}
+.custom-select > option:hover{
+    background: #62398B !important;
+    color: #fff
+}
+.custom-select > option::backdrop{
+    background: #62398B !important;
+    color:#fff !important;
+}
+
 @media (min-width:767px)and (max-width:990px){
     .about-text{
         margin-top:1rem; 
