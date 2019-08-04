@@ -14,6 +14,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/plugins/dropzone/dropzone.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
@@ -69,7 +71,7 @@
                         <!-- Card -->
                         <div class="card">
                             <!-- Card image -->
-                            <img class="card-img-top w-100" src="assets/images/shelf.jpg"
+                            <img class="card-img-top w-100 h-279p" src="assets/images/shelf.jpg"
                                 alt="library">
                             <!-- Card content -->
                             <div class="card-body">
@@ -137,25 +139,71 @@
                                                 </div>
                                             </form>
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-12 mt-5">
                                                     <div class="table-responsive">
-                                                        <table class="table table-hover">
-                                                            <thead>
+                                                        <table class="table table-hover border border-light f-18">
+                                                            <thead class="bg-light">
                                                                 <tr>
-                                                                    <th scope="col"></th>
-                                                                    <th scope="col"></th>
-                                                                    <th scope="col"></th>
-                                                                    <th scope="col"></th>
-                                                                    <th scope="col"></th>
+                                                                    <th scope="col">s/n</th>
+                                                                    <th scope="col">Class</th>
+                                                                    <th scope="col">Subject</th>
+                                                                    <th scope="col">Title</th>
+                                                                    <th scope="col">Author</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Format</th>
+                                                                    <th>In Use</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td scope="row"></td>
-                                                                    <td scope="row"></td>
-                                                                    <td scope="row"></td>
-                                                                    <td scope="row"></td>
-                                                                    <td scope="row"></td>
+                                                                    <td scope="row">1</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td scope="row">2</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td scope="row">3</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td scope="row">3</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td scope="row">3</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -190,7 +238,71 @@
                                     bulk of the card's content.
                                 </p>
                                 <!-- Button -->
-                                <a href="#" class="btn btn-brand btn-waves">View All Requests <i class="fa fa-sign-in"></i></a>
+                                <a href="#" class="btn btn-brand btn-waves"  data-toggle="modal" data-target="#requestModal">View All Requests <i class="fa fa-sign-in"></i></a>
+                                <!-- Requests Modal -->
+                                <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                    aria-hidden="true">
+                                    <!-- Change class .modal-sm to change the size of the modal -->
+                                    <div class="modal-dialog modal-fluid" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title w-100 brand-text fw-med" id="myModalLabel">CSMT E-Library Card Requests</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" class="brand-text fw-med">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-8">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover border border-light">
+                                                                <thead>
+                                                                    <th scope="col">s/n</th>
+                                                                    <th scope="col">Name</th>
+                                                                    <th scope="col">Date</th>
+                                                                    <th scope="col">Status</th>
+                                                                    <th scope="col">Actions</th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td scope="row">1</td>
+                                                                        <td>Obi Wan Kenobi</td>
+                                                                        <td>23/07/19</td>
+                                                                        <td class="text-warning">Pending</td>
+                                                                        <td>
+                                                                            <button class="btn btn-sm btn-brand">Approve</button>
+                                                                            <button class="btn btn-sm btn-danger">Reject</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td scope="row">2</td>
+                                                                        <td>Young Ani</td>
+                                                                        <td>23/07/19</td>
+                                                                        <td class="text-secondary">Approved</td>
+                                                                        <td>
+                                                                            <button class="btn btn-sm btn-outline-secondary">Review</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td scope="row">3</td>
+                                                                        <td>Saint Obi</td>
+                                                                        <td>23/07/19</td>
+                                                                        <td class="text-warning">Pending</td>
+                                                                        <td>
+                                                                            <button class="btn btn-sm btn-brand">Approve</button>
+                                                                            <button class="btn btn-sm btn-danger">Reject</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./ Requests Modal -->
                             </div>
                         </div>
                         <!-- Card -->
@@ -199,7 +311,7 @@
                         <!-- Card -->
                         <div class="card">
                             <!-- Card image -->
-                            <img class="card-img-top w-100" src="assets/images/shelving.jpg" 
+                            <img class="card-img-top w-100  h-279p" src="assets/images/shelving.jpg" 
                                 alt="library">
                             <!-- Card content -->
                             <div class="card-body">
@@ -211,7 +323,46 @@
                                     bulk of the card's content.
                                 </p>
                                 <!-- Button -->
-                                <a href="#" class="btn btn-brand btn-waves">Upload New Materials <i class="fa fa-sign-in"></i></a>
+                                <a href="#" class="btn btn-brand btn-waves" data-toggle="modal" data-target="#uploadModal">Upload New Materials <i class="fa fa-sign-in"></i></a>
+                                <!-- upload Modal -->
+                                <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                    aria-hidden="true">
+                                    <!-- Change class .modal-sm to change the size of the modal -->
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title w-100 brand-text fw-med" id="myModalLabel">CSMT E-Library | Upload New material</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" class="brand-text fw-med">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid upload-container">
+                                                    <form action="" class="mt-4">
+                                                        <div class="form-group pos-rel">
+                                                            <label for="uploadMaterials" class="display-upload-input">Click here to upload files</label>
+                                                            <input type="file" name="uploadMaterials" id="uploadMaterials" class="upload-input" multiple>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button type="submit"  class="btn btn-primary">Submit</button>
+                                                            <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </form>
+                                                    <!-- <div id="dropzone">
+                                                        <form class="dropzone needsclick" id="demo-upload" action="/upload">
+                                                            <div class="dz-message needsclick">    
+                                                            Drop files here or click to upload.<br>
+                                                         
+                                                            </div>
+                                                        </fORM>
+                                                        
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./Upload Modal -->
                             </div>
                         </div>
                         <!-- Card -->
@@ -299,6 +450,34 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+        <script src="./assets/plugins/dropzone/dropzone.js"></script>
+        <script>
+            var dropzone = new Dropzone('#demo-upload', {
+                previewTemplate: document.querySelector('#preview-template').innerHTML,
+                parallelUploads: 2,
+                thumbnailHeight: 120,
+                thumbnailWidth: 120,
+                maxFilesize: 3,
+                filesizeBase: 1000,
+                thumbnail: function(file, dataUrl) {
+                    if (file.previewElement) {
+                        file.previewElement.classList.remove("dz-file-preview");
+                        var images = file.previewElement.querySelectorAll("[data-dz-thumbnail]");
+                        for (var i = 0; i < images.length; i++) {
+                            var thumbnailElement = images[i];
+                            thumbnailElement.alt = file.name;
+                            thumbnailElement.src = dataUrl;
+                        }
+                        setTimeout(function() { file.previewElement.classList.add("dz-image-preview"); }, 1);
+                    }
+                }
+            });
+            myDropzone.on("addedfile", function(file) {
+                file.previewElement.addEventListener("click", function() {
+                    myDropzone.removeFile(file);
+                });
+            });
+        </script>
     
     </body>
 </html>

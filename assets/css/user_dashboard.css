@@ -1,0 +1,52 @@
+.h-200p{
+    height: 200px;
+}
+.card-overlay{
+    background: rgba(98, 57, 139, 0.6);
+    width:100%;
+    height: 200px;
+    position: absolute;
+    display: none;
+}
+table td, table th{
+    font-size: 18px !important;
+}
+/* $darktan: #9A8548;
+$grad2: #373737;
+$grad1: darken($grad2, 2);
+$grad3: lighten($darktan, 4);
+$grad5: darken($darktan, 4); */
+
+.bookshelf-frame{
+    background: #9a8548;;
+    min-height: 500px;
+    background: url('https://static.tumblr.com/8x9m588/C8ho55ylx/bg-wood2.png'),
+    linear-gradient(#373737,#323232);	
+    /* background-size: auto, 10px 300px; */
+    border: 10px solid #9A8548 !important;
+	/* &:first-of-type {
+        border-top: 10px solid $darktan;
+    } */
+}
+.book-wrapper {
+    display: inline-block;
+    width: 290px;
+    vertical-align: bottom;
+    height: 150px;
+    position: relative;
+    max-width: 100%;
+}
+.book-wrapper img {
+    /* height: auto;
+    width: auto; */
+    /* position: absolute; */
+    /* bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); */
+    max-height: 100%;
+    max-width: 100%;
+}
+.book-wrapper img:hover{
+    -webkit-filter: brightness(120%);
+    box-shadow: 4px 3px 5px 0px rgba(154,133,72,1);
+}

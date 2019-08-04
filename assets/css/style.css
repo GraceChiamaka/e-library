@@ -13,11 +13,14 @@ html, body{
 .w-100p{ 
     width: 100px;
 }
+.w-40p{
+    width:40px;
+}
 .fw-med{
     font-weight: 500;
 }
 .brand-border{
-    border: 1px solid #62398B !important;
+    border: 1px solid #62398b !important;
 }
 .nav-link{
     font-size: 18px;
@@ -40,6 +43,9 @@ html, body{
 }
 .btn-brand{
     background: #62398B;
+}
+.c-brand{
+    color: #62398B !important;
 }
 .bg-brand{
     background: #62398B;
@@ -134,7 +140,29 @@ html, body{
     background: #62398B !important;
     color:#fff !important;
 }
-
+.upload-input{
+    height: 100px;
+    width: 100%;
+    border: 2px dashed #62398B;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+.display-upload-input{
+    width: 100%;
+    height: 100px;
+    border: 2px dashed #62398B;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    padding: 2rem 0;
+    color: #62398B;
+    font-weight: bold;
+    font-family:'Lacquer', sans-serif;
+}
+.pos-rel{
+    position: relative;
+}
 @media (min-width:767px)and (max-width:990px){
     .about-text{
         margin-top:1rem; 
@@ -144,6 +172,9 @@ html, body{
 @media(max-width: 600px){
     .card{
         margin-bottom: 1rem;
+    }
+    .h-279p{
+        height: 200px;
     }
     .about-text{
         margin-top:4rem;
