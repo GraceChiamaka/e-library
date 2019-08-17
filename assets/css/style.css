@@ -54,6 +54,7 @@ body {
 .btn-outline-brand {
   background: #fff !important;
   border: 2px solid #62398b;
+  color: #62398b;
 }
 .intro-text {
   margin-top: 15rem;

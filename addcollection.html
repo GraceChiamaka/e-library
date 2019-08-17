@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CSMT Library</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/user_dashboard.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-transparent brand-border sticky-navbar">
+                <div class="container">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" class="w-100p" alt="brand logo">
+                    </a>
+                
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler brand-border pt-2" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars brand-text"></span>
+                    </button>
+                
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                        <!-- Links -->
+                        <ul class="navbar-nav ml-auto">
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown fw-med brand-text">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><img src="assets/images/user.png" alt=""></a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a href="collections.html" class="dropdown-item">My Collections</a>
+                                    <a class="dropdown-item" href="#">Reminders</a>
+                                    <a class="dropdown-item" href="#">Notifications</a>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Links -->
+                    </div>
+                    <!-- Collapsible content -->
+                </div>
+            </nav>
+            <!--/.Navbar-->
+        </header>
+        <!-- ./header -->
+        <!-- main -->
+        <main class="my-5">  
+            <div class="container py-5">
+                <div class="row my-5 ">
+                    <div class="col-md-12">
+                        <div class="row justify-content-between px-3">
+                            <div class="col-md-4">
+                                <h4 class="c-brand">Add Books to Your <span>Science</span> Collection <span class="c-brand font-weight-bold">(10)</span> </h4>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="collections.html" class="btn btn-outline-secondary pull-right mb-4">
+                                    <i class="fa fa-long-arrow-left"></i> Back To Collections
+                                </a>
+                            </div>
+                        </div>
+                      
+                        <div class="container-fluid">
+                            <form action="" class="row mt-5">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select class="browser-default custom-select">
+                                            <option disabled>Select an option</option>
+                                            <option value="jss1">JSS1</option>
+                                            <option value="jss2">JSS2</option>
+                                            <option value="jss3">JSS3</option>
+                                            <option value="math">Mathematic</option>
+                                            <option value="bio">Biology</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select class="browser-default custom-select">
+                                            <option disabled>Select an option</option>
+                                            <option value="hard">Hard Copy</option>
+                                            <option value="soft">Soft Copy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <!-- Search form -->
+                                        <div class="md-form mt-0">
+                                            <input class="form-control" type="text" placeholder="Search your collection" aria-label="Search">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <button class="btn btn-brand btn-block white-text">Apply</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <div class="col-md-12 mt-5">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover border border-light f-18">
+                                            <thead class="bg-light">
+                                                <tr class="f-18">
+                                                    <th scope="col">s/n</th>
+                                                    <th scope="col">Class</th>
+                                                    <th scope="col">Subject</th>
+                                                    <th scope="col">Title</th>
+                                                    <th scope="col">Author</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Format</th>
+                                                    <th>Download/Borrow</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td scope="row">SS1</td>
+                                                    <td scope="row">Chemistry</td>
+                                                    <td scope="row">New School Chemistry</td>
+                                                    <td scope="row">P.N Okeke</td>
+                                                    <td scope="row">new school chemistry </td>
+                                                    <td>Hard Copy</td>
+                                                    <td><button class="btn btn-sm btn-brand">Borrow</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">2</td>
+                                                    <td scope="row">SS1</td>
+                                                    <td scope="row">Chemistry</td>
+                                                    <td scope="row">New School Chemistry</td>
+                                                    <td scope="row">P.N Okeke</td>
+                                                    <td scope="row">new school chemistry </td>
+                                                    <td>E-Book</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-brand"><i class="fa fa-download"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="add to collections"><i class="fa fa-heart"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">3</td>
+                                                    <td scope="row">SS1</td>
+                                                    <td scope="row">Chemistry</td>
+                                                    <td scope="row">New School Chemistry</td>
+                                                    <td scope="row">P.N Okeke</td>
+                                                    <td scope="row">new school chemistry </td>
+                                                    <td>Hard Copy</td>
+                                                    <td><button class="btn btn-sm btn-brand">Borrow</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">4</td>
+                                                    <td scope="row">SS1</td>
+                                                    <td scope="row">Chemistry</td>
+                                                    <td scope="row">New School Chemistry</td>
+                                                    <td scope="row">P.N Okeke</td>
+                                                    <td scope="row">new school chemistry </td>
+                                                    <td>E-Book</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-brand"><i class="fa fa-download"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="add to collections"><i class="fa fa-heart"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">5</td>
+                                                    <td scope="row">SS1</td>
+                                                    <td scope="row">Chemistry</td>
+                                                    <td scope="row">New School Chemistry</td>
+                                                    <td scope="row">P.N Okeke</td>
+                                                    <td scope="row">new school chemistry </td>
+                                                    <td>E-Book</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-brand"><i class="fa fa-download"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="add to collections"><i class="fa fa-heart"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main -->
+        <!-- Footer -->
+        <footer class="page-footer  bg-brand pt-4">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="w-100p" alt="">
+                            </a>
+                        </h5>
+                        <p>CSMT: The school for your child best interest</p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase">NOTICE BOARD</h5>
+                        <ul class="list-unstyled f-16">
+                            <li>
+                                <a href="">Admissions</a>
+                            </li>
+                            <li>
+                                <a href="">Entrance Exams</a>
+                            </li>
+                            <li>
+                                <a href="">School Trip</a>
+                            </li>
+                            <li>
+                                <a href="">Library</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Contact US</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="f-16">Suite 14 & 23 Ase complex, Vetenary junction, Mokola Ibadan, Oyo State Nigeria</p>
+                            </li>
+                            <li>
+                                <p class="f-16">hello@csmt.com</p>
+                            </li>
+                            <li>
+                                <p class="f-16">
+                                    08092816959 
+                                    <br>
+                                    08180997078
+                                </p>
+                            </li>
+                            
+                        </ul>
+        
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid row -->
+                </div>
+                <!-- Footer Links -->
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 f-16">© 2019 Copyright:
+                    <a href="https://mdbootstrap.com/education/bootstrap/"> CSMT.com</a>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+        <!-- ./footer -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+     
+    </body>
+</html>

@@ -68,300 +68,210 @@
                                 <h3 class="c-brand">My Collections <span class="c-brand font-weight-bold">(10)</span> </h3>
                             </div>
                             <div class="col-md-4">
-                                <button class="btn btn-outline-secondary pull-right" 
-                                    data-toggle="modal" data-target="#newCollectionModal">ADD TO THIS COLLECTION</button>
-                                <!-- modal -->
-                                <div class="modal fade" id="newCollectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-fluid" role="document">
-                                        <div class="modal-content">
-                                            <div class="">
-                                                <div class="modal-header border-0">
-                                                    <h3 class="modal-title w-100 white-text fw-med" id="myModalLabel">CSMT E-Library</h3>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true" class="white-text fw-med">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body border-0">
-                                                    <div class="container-fluid">
-                                                        <form action="" class="row">
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <select class="browser-default custom-select">
-                                                                        <option disabled>Select an option</option>
-                                                                        <option value="jss1">JSS1</option>
-                                                                        <option value="jss2">JSS2</option>
-                                                                        <option value="jss3">JSS3</option>
-                                                                        <option value="math">Mathematic</option>
-                                                                        <option value="bio">Biology</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <select class="browser-default custom-select">
-                                                                        <option disabled>Select an option</option>
-                                                                        <option value="hard">Hard Copy</option>
-                                                                        <option value="soft">Soft Copy</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <!-- Search form -->
-                                                                    <div class="md-form mt-0">
-                                                                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <button class="btn btn-brand btn-block white-text">Apply</button>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                        <div class="row">
-                                                            <div class="col-md-12 mt-5">
-                                                                <div class="table-responsive">
-                                                                    <table class="table table-hover border border-light f-18">
-                                                                        <thead class="bg-light">
-                                                                            <tr class="f-18">
-                                                                                <th scope="col">s|n</th>
-                                                                                <th scope="col">Class</th>
-                                                                                <th scope="col">Subject</th>
-                                                                                <th scope="col">Title</th>
-                                                                                <th scope="col">Author</th>
-                                                                                <th scope="col">Description</th>
-                                                                                <th scope="col">Format</th>
-                                                                                <th>Download/Borrow</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td scope="row">1</td>
-                                                                                <td scope="row">SS1</td>
-                                                                                <td scope="row">Chemistry</td>
-                                                                                <td scope="row">New School Chemistry</td>
-                                                                                <td scope="row">P.N Okeke</td>
-                                                                                <td scope="row">new school chemistry </td>
-                                                                                <td>Hard Copy</td>
-                                                                                <td><button class="btn btn-sm btn-brand">Borrow</button></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td scope="row">2</td>
-                                                                                <td scope="row">SS1</td>
-                                                                                <td scope="row">Chemistry</td>
-                                                                                <td scope="row">New School Chemistry</td>
-                                                                                <td scope="row">P.N Okeke</td>
-                                                                                <td scope="row">new school chemistry </td>
-                                                                                <td>E-Book</td>
-                                                                                <td>
-                                                                                    <button class="btn btn-sm btn-brand"><i class="fa fa-download"></i></button>
-                                                                                    <button class="btn btn-sm btn-danger" title="add to collections"><i class="fa fa-heart"></i></button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td scope="row">3</td>
-                                                                                <td scope="row">SS1</td>
-                                                                                <td scope="row">Chemistry</td>
-                                                                                <td scope="row">New School Chemistry</td>
-                                                                                <td scope="row">P.N Okeke</td>
-                                                                                <td scope="row">new school chemistry </td>
-                                                                                <td>Hard Copy</td>
-                                                                                <td><button class="btn btn-sm btn-brand">Borrow</button></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td scope="row">4</td>
-                                                                                <td scope="row">SS1</td>
-                                                                                <td scope="row">Chemistry</td>
-                                                                                <td scope="row">New School Chemistry</td>
-                                                                                <td scope="row">P.N Okeke</td>
-                                                                                <td scope="row">new school chemistry </td>
-                                                                                <td>E-Book</td>
-                                                                                <td>
-                                                                                    <button class="btn btn-sm btn-brand"><i class="fa fa-download"></i></button>
-                                                                                    <button class="btn btn-sm btn-danger" title="add to collections"><i class="fa fa-heart"></i></button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td scope="row">5</td>
-                                                                                <td scope="row">SS1</td>
-                                                                                <td scope="row">Chemistry</td>
-                                                                                <td scope="row">New School Chemistry</td>
-                                                                                <td scope="row">P.N Okeke</td>
-                                                                                <td scope="row">new school chemistry </td>
-                                                                                <td>E-Book</td>
-                                                                                <td>
-                                                                                    <button class="btn btn-sm btn-brand"><i class="fa fa-download"></i></button>
-                                                                                    <button class="btn btn-sm btn-danger" title="add to collections"><i class="fa fa-heart"></i></button>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer border-0">
-                                                    <button type="button" class="btn btn-warning btn-md" data-dismiss="modal">Close</button>
-                                                    
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ./modal -->
+                                <button class="btn btn-outline-secondary pull-right mb-4" 
+                                data-toggle="modal" data-target="#newCollectionModal">CREATE NEW COLLECTION</button>
                             </div>
                         </div>
-                        
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <a href="" class="text-dark" data-toggle="modal" data-target="#collectionModal">
-                                            <div class="card  collection-card">
-                                                <div class="card-body">
-                                                    SCIENCE
-                                                </div>
-                                                <!-- modal -->
-                                                <div class="modal fade" id="collectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-fluid" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="bookshelf-frame">
-                                                                <div class="modal-header border-0">
-                                                                    <h3 class="modal-title w-100 white-text fw-med" id="myModalLabel">My Science Books</h3>
-                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                        <span aria-hidden="true" class="white-text fw-med">&times;</span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="modal-body border-0">
-                                                                    <div class="container-fluid">
-                                                                        <div class="row mt-5">
-                                                                            <div class="col-md-2 book-wrapper">
-                                                                                <a target="_blank" title="click to read" href="./assets/images/ibos.pdf">
-                                                                                    <img src="./assets/images/book_2.jpg" class="w-100" alt="">
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="col-md-2 book-wrapper">
-                                                                                <a href="./assets/images/monk.pdf" target="_blank">
-                                                                                    <img src="./assets/images/book_1.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                        
-                                                                            <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
-                                                                                <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                        
-                                                                            <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
-                                                                                <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                            <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
-                                                                                <img src="./assets/images/book_1.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                            <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
-                                                                                <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                        </div>
-                
-                                                                        <div class="shelf-divider mt-4"></div>
-                
-                                                                        <div class="row mt-5">
-                                                                            <div class="col-md-2 book-wrapper">
-                                                                                <a target="_blank" title="click to read" href="./assets/images/ibos.pdf">
-                                                                                    <img src="./assets/images/book_2.jpg" class="w-100" alt="">
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="col-md-2 book-wrapper">
-                                                                                <a href="./assets/images/monk.pdf" target="_blank">
-                                                                                    <img src="./assets/images/book_1.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                        
-                                                                            <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
-                                                                                <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                        
-                                                                            <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
-                                                                                <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                            <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
-                                                                                <img src="./assets/images/book_1.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                            <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
-                                                                                <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modal-footer border-0">
-                                                                    <button type="button" class="btn btn-warning btn-md" data-dismiss="modal">Close</button>
-                                                                    <button type="button" class="btn btn-primary btn-md">Save changes</button>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- ./modal -->
-                                            </div>
-                                        </a>
-                                        
-                                    </div>
-                                    <div class="col-md-3">
+                      
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="" class="text-dark dis-block" data-toggle="modal" data-target="#collectionModal">
                                         <div class="card  collection-card">
                                             <div class="card-body">
-                                                MATHEMATICS
+                                                SCIENCE
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card collection-card">
-                                            <div class="card-body">
-                                                PHYSICS
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card collection-card">
-                                            <div class="card-body">
-                                                PHYSICS LAB
-                                            </div>
+                                    </a>
+                                    
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card  collection-card">
+                                        <div class="card-body">
+                                            MATHEMATICS
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="card collection-card">
-                                            <div class="card-body">
-                                                BIOLOGY
-                                            </div>
+                                <div class="col-md-3">
+                                    <div class="card collection-card">
+                                        <div class="card-body">
+                                            PHYSICS
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="card collection-card">
-                                            <div class="card-body">
-                                                ROBOTICS
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card collection-card">
-                                            <div class="card-body">
-                                                ARTIFICIAL INTELLIGENCE
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card collection-card">
-                                            <div class="card-body">
-                                                COMPUTER LAB
-                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card collection-card">
+                                        <div class="card-body">
+                                            PHYSICS LAB
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card collection-card">
+                                        <div class="card-body">
+                                            BIOLOGY
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card collection-card">
+                                        <div class="card-body">
+                                            ROBOTICS
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card collection-card">
+                                        <div class="card-body">
+                                            ARTIFICIAL INTELLIGENCE
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card collection-card">
+                                        <div class="card-body">
+                                            COMPUTER LAB
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                 </div>
             </div>
+            <!-- ALL MODALS -->
+            <!-- add to personal collection modal -->
+            <!-- modal -->
+            <div class="modal fade" id="collectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fluid" role="document">
+                    <div class="modal-content">
+                        <div class="bookshelf-frame">
+                            <div class="modal-header border-0">
+                                <h3 class="modal-title w-100 white-text fw-med" id="myModalLabel">My Science Books</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="white-text fw-med">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body border-0">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-between">
+                                        <div class="col-md-4">
+                                            <input class="form-control white-input" type="text" placeholder="Search" aria-label="Search">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="addcollection.html" class="btn btn-outline-light pull-right mb-4">ADD TO THIS COLLECTION</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mt-5">
+                                        <div class="col-md-2 book-wrapper">
+                                            <a target="_blank" title="click to read" href="./assets/images/ibos.pdf">
+                                                <img src="./assets/images/book_2.jpg" class="w-100" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 book-wrapper">
+                                            <a href="./assets/images/monk.pdf" target="_blank">
+                                            <img src="./assets/images/book_1.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                    
+                                        <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
+                                            <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                    
+                                        <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
+                                            <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                        <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
+                                            <img src="./assets/images/book_1.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                        <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
+                                            <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="shelf-divider mt-4"></div>
+
+                                    <div class="row mt-5">
+                                        <div class="col-md-2 book-wrapper">
+                                            <a target="_blank" title="click to read" href="./assets/images/ibos.pdf">
+                                                <img src="./assets/images/book_2.jpg" class="w-100" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 book-wrapper">
+                                            <a href="./assets/images/monk.pdf" target="_blank">
+                                                <img src="./assets/images/book_1.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                    
+                                        <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
+                                            <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                    
+                                        <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
+                                            <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                        <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
+                                            <img src="./assets/images/book_1.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                        <div class="col-md-2 book-wrapper"><a href="./assets/images/ibos.pdf" target="_blank">
+                                            <img src="./assets/images/book_2.jpg" class="w-100" alt=""></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0">
+                                <button type="button" class="btn btn-warning btn-md" data-dismiss="modal">Close</button>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- ./modal -->
+            <!-- ./add to personal collection modal -->
+            <!-- new collection modal -->
+            <!-- modal -->
+            <div class="modal fade" id="newCollectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="modal-header border-0">
+                                <h3 class="modal-title w-100 c-brand fw-med" id="myModalLabel">CSMT New Library Collection</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="white-text fw-med">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body border-0">
+                                <div class="container-fluid">
+                                    <form action="" class="row mt-5">
+                                        <div class="form-group col-md-12">
+                                            <!-- <div class="md-form mt-0"> -->
+                                                <input class="form-control" type="text" placeholder="Enter the name of your collection" required>
+                                            <!-- </div> -->
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <button class="btn btn-brand btn-block mt-3" id="create_collection">Create Collection</button>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0">
+                                <button type="button" class="btn btn-outline-brand btn-md" data-dismiss="modal">Close</button>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- ./modal -->
+            <!-- ./ new collection modal -->
+            <!-- ./ALL MODALS -->
         </main>
         <!-- main -->
         <!-- Footer -->
@@ -442,9 +352,19 @@
         <!-- Bootstrap core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>      
-        <script src="assets/js/script.js">
-           
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>     
+        <script src="assets/js/script.js"></script>
+        <script>
+            $('#create_collection').on('click', function(){
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'You have successfully created a new collection',
+                    type: 'success',
+                    confirmButtonText: 'Ok'
+                });
+            })
+            
         </script>
     </body>
 </html>
