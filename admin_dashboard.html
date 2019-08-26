@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CSMT Library</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/plugins/dropzone/dropzone.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-transparent brand-border sticky-navbar">
+                <div class="container">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" class="w-100p" alt="brand logo">
+                    </a>
+                
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler brand-border pt-2" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars brand-text"></span>
+                    </button>
+                
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                        <!-- Links -->
+                        <ul class="navbar-nav ml-auto">
+                            <!-- <li class="nav-item active fw-med">
+                                <a class="nav-link" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li> -->
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown fw-med brand-text">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><img src="assets/images/user.png" alt=""></a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Reminders</a>
+                                    <a class="dropdown-item" href="#">Notifications</a>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Links -->
+                    </div>
+                    <!-- Collapsible content -->
+                </div>
+            </nav>
+            <!--/.Navbar-->
+        </header>
+        <!-- ./header -->
+        <!-- main -->
+        <main class="my-5">  
+            <div class="container-fluid py-5">
+                <div class="row my-5 ">
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- Card image -->
+                            <img class="card-img-top w-100 h-279p" src="assets/images/shelf.jpg"
+                                alt="library">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title"><a class="brand-text" >Library</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the 
+                                    bulk of the card's content.
+                                </p>
+                                <!-- Button -->
+                                <a type="button" class="btn btn-brand btn-waves white-text" data-toggle="modal" data-target="#libraryModal">Go To Library <i class="fa fa-sign-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <!-- Modal -->
+                        <!-- Central Modal Small -->
+                        <div class="modal fade" id="libraryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                            <!-- Change class .modal-sm to change the size of the modal -->
+                            <div class="modal-dialog modal-fluid" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title w-100 brand-text fw-med" id="myModalLabel">CSMT E-Library</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="brand-text fw-med">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <form action="" class="row">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <select class="browser-default custom-select">
+                                                            <option disabled>Select an option</option>
+                                                            <option value="jss1">JSS1</option>
+                                                            <option value="jss2">JSS2</option>
+                                                            <option value="jss3">JSS3</option>
+                                                            <option value="math">Mathematic</option>
+                                                            <option value="bio">Biology</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <select class="browser-default custom-select">
+                                                            <option disabled>Select an option</option>
+                                                            <option value="hard">Hard Copy</option>
+                                                            <option value="soft">Soft Copy</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <!-- Search form -->
+                                                        <div class="md-form mt-0">
+                                                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <button class="btn btn-brand btn-block white-text">Apply</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="row">
+                                                <div class="col-md-12 mt-5">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover border border-light f-18">
+                                                            <thead class="bg-light">
+                                                                <tr>
+                                                                    <th scope="col">s/n</th>
+                                                                    <th scope="col">Class</th>
+                                                                    <th scope="col">Subject</th>
+                                                                    <th scope="col">Title</th>
+                                                                    <th scope="col">Author</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Format</th>
+                                                                    <th>In Use</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td scope="row">1</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td scope="row">2</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td scope="row">3</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td scope="row">3</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td scope="row">3</td>
+                                                                    <td scope="row">SS1</td>
+                                                                    <td scope="row">Chemistry</td>
+                                                                    <td scope="row">New School Chemistry</td>
+                                                                    <td scope="row">P.N Okeke</td>
+                                                                    <td scope="row">new school chemistry </td>
+                                                                    <td>Hard Copy</td>
+                                                                    <td>No</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary btn-md">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Central Modal Small -->
+                        <!-- ./Modal -->
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- Card image -->
+                            <img class="card-img-top w-100 h-279p" src="assets/images/frontdesk.jpg"
+                                alt="library id request">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title"><a class="brand-text" >Library ID Requests</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the 
+                                    bulk of the card's content.
+                                </p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-brand btn-waves"  data-toggle="modal" data-target="#requestModal">View All Requests <i class="fa fa-sign-in"></i></a>
+                                <!-- Requests Modal -->
+                                <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                    aria-hidden="true">
+                                    <!-- Change class .modal-sm to change the size of the modal -->
+                                    <div class="modal-dialog modal-fluid" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title w-100 brand-text fw-med" id="myModalLabel">CSMT E-Library Card Requests</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" class="brand-text fw-med">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-8">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover border border-light">
+                                                                <thead>
+                                                                    <th scope="col">s/n</th>
+                                                                    <th scope="col">Name</th>
+                                                                    <th scope="col">Date</th>
+                                                                    <th scope="col">Status</th>
+                                                                    <th scope="col">Actions</th>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td scope="row">1</td>
+                                                                        <td>Obi Wan Kenobi</td>
+                                                                        <td>23/07/19</td>
+                                                                        <td class="text-warning">Pending</td>
+                                                                        <td>
+                                                                            <button class="btn btn-sm btn-brand">Approve</button>
+                                                                            <button class="btn btn-sm btn-danger">Reject</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td scope="row">2</td>
+                                                                        <td>Young Ani</td>
+                                                                        <td>23/07/19</td>
+                                                                        <td class="text-secondary">Approved</td>
+                                                                        <td>
+                                                                            <button class="btn btn-sm btn-outline-secondary">Review</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td scope="row">3</td>
+                                                                        <td>Saint Obi</td>
+                                                                        <td>23/07/19</td>
+                                                                        <td class="text-warning">Pending</td>
+                                                                        <td>
+                                                                            <button class="btn btn-sm btn-brand">Approve</button>
+                                                                            <button class="btn btn-sm btn-danger">Reject</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./ Requests Modal -->
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- Card image -->
+                            <img class="card-img-top w-100  h-279p" src="assets/images/shelving.jpg" 
+                                alt="library">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title"><a class="brand-text" >Teaching Materials</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the 
+                                    bulk of the card's content.
+                                </p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-brand btn-waves" data-toggle="modal" data-target="#uploadModal">Upload New Materials <i class="fa fa-sign-in"></i></a>
+                                <!-- upload Modal -->
+                                <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                    aria-hidden="true">
+                                    <!-- Change class .modal-sm to change the size of the modal -->
+                                    <div class="modal-dialog modal-fluid" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title w-100 brand-text fw-med" id="myModalLabel">CSMT E-Library | Upload New material</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" class="brand-text fw-med">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid upload-container">
+                                                    <h3>Fill out the form to upload new teaching materials</h3>
+                                                    <form action="" class="mt-4">                                                            
+                                                        <div class="form-group row">
+                                                            <div class="col-md-6">
+                                                                <label for="material-name">Enter Material Name</label>
+                                                                <input type="text" class="form-control custom-input" name="material-name" id="material-name" required>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="category">Category</label>
+                                                                <select type="text" class="form-control custom-select" name="category" id="category" required>
+                                                                    <option>Select a Category</option>
+                                                                    <option value="junior">Junior</option>
+                                                                    <option value="senior">Senior</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-6">
+                                                                <label for="subject">Subject</label>
+                                                                <input type="text" class="form-control custom-input" id="subject" name="subject" required>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="genre">Genre</label>
+                                                                <input type="text" class="form-control custom-input" id="genre" name="genre" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-6">
+                                                                <label for="author">Author</label>
+                                                                <input type="text" class="form-control custom-input" id="author" name="author" required>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="isbn">ISBN</label>
+                                                                <input type="text"  class="form-control custom-input" id="isbn" name="isbn" >
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-12">
+                                                                <label for="description">Description</label>
+                                                                <textarea name="description" id="description" class="form-control custom-input" required></textarea>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12 mt-3">
+                                                                <label for="">Access Type</label>
+                                                                <select class="form-control custom-select" required>
+                                                                    <option disabled>-- select access type --</option>
+                                                                    <option value="restriced">Student</option>
+                                                                    <option value="all access">Staff</option>
+                                                                    <option value="admin">Admin</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-12 mt-4">
+                                                                <label for="">Cover Image</label>
+                                                                <div class="form-group pos-rel">
+                                                                    <label for="coverimage" class="display-upload-input">Click here to upload Cover Image</label>
+                                                                    <input type="file" name="coverimage" id="coverimage" class="upload-input" multiple>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group pos-rel">
+                                                            <label for="uploadMaterials" class="display-upload-input">Click here to upload files</label>
+                                                            <input type="file" name="uploadMaterials" id="uploadMaterials" class="upload-input" multiple>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button type="submit"  class="btn btn-primary">Submit</button>
+                                                            <button type="button" class="btn btn-secondary btn-md" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </form>
+                                                   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./Upload Modal -->
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 mt-4">
+                    <div class="col-md-4">
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- Card image -->
+                            <img class="card-img-top w-100 h-279p" src="assets/images/reading.jpg"
+                                alt="library">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title"><a class="brand-text" >Users</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the 
+                                    bulk of the card's content.
+                                </p>
+                                <!-- Button -->
+                                <a href="users.html" type="button" class="btn btn-brand btn-waves white-text">View Users <i class="fa fa-sign-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- Card -->                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main -->
+        <!-- Footer -->
+        <footer class="page-footer  bg-brand pt-4">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="w-100p" alt="">
+                            </a>
+                        </h5>
+                        <p>CSMT: The school for your child best interest</p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase">NOTICE BOARD</h5>
+                        <ul class="list-unstyled f-16">
+                            <li>
+                                <a href="">Admissions</a>
+                            </li>
+                            <li>
+                                <a href="">Entrance Exams</a>
+                            </li>
+                            <li>
+                                <a href="">School Trip</a>
+                            </li>
+                            <li>
+                                <a href="">Library</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Contact US</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="f-16">Suite 14 & 23 Ase complex, Vetenary junction, Mokola Ibadan, Oyo State Nigeria</p>
+                            </li>
+                            <li>
+                                <p class="f-16">hello@csmt.com</p>
+                            </li>
+                            <li>
+                                <p class="f-16">
+                                    08092816959 
+                                    <br>
+                                    08180997078
+                                </p>
+                            </li>
+                            
+                        </ul>
+        
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid row -->
+                </div>
+                <!-- Footer Links -->
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 f-16">© 2019 Copyright:
+                    <a href="https://mdbootstrap.com/education/bootstrap/"> CSMT.com</a>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+        <!-- ./footer -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+        <script src="./assets/plugins/dropzone/dropzone.js"></script>
+        <script>
+            var dropzone = new Dropzone('#demo-upload', {
+                previewTemplate: document.querySelector('#preview-template').innerHTML,
+                parallelUploads: 2,
+                thumbnailHeight: 120,
+                thumbnailWidth: 120,
+                maxFilesize: 3,
+                filesizeBase: 1000,
+                thumbnail: function(file, dataUrl) {
+                    if (file.previewElement) {
+                        file.previewElement.classList.remove("dz-file-preview");
+                        var images = file.previewElement.querySelectorAll("[data-dz-thumbnail]");
+                        for (var i = 0; i < images.length; i++) {
+                            var thumbnailElement = images[i];
+                            thumbnailElement.alt = file.name;
+                            thumbnailElement.src = dataUrl;
+                        }
+                        setTimeout(function() { file.previewElement.classList.add("dz-image-preview"); }, 1);
+                    }
+                }
+            });
+            myDropzone.on("addedfile", function(file) {
+                file.previewElement.addEventListener("click", function() {
+                    myDropzone.removeFile(file);
+                });
+            });
+        </script>
+    
+    </body>
+</html>

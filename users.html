@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CSMT Library</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/plugins/dropzone/dropzone.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-transparent brand-border sticky-navbar">
+                <div class="container">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" class="w-100p" alt="brand logo">
+                    </a>
+                
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler brand-border pt-2" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars brand-text"></span>
+                    </button>
+                
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                        <!-- Links -->
+                        <ul class="navbar-nav ml-auto">
+                            <!-- <li class="nav-item active fw-med">
+                                <a class="nav-link" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li> -->
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown fw-med brand-text">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><img src="assets/images/user.png" alt=""></a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Reminders</a>
+                                    <a class="dropdown-item" href="#">Notifications</a>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Links -->
+                    </div>
+                    <!-- Collapsible content -->
+                </div>
+            </nav>
+            <!--/.Navbar-->
+        </header>
+        <!-- ./header -->
+        <!-- main -->
+        <main class="my-5">  
+            <div class="container-fluid">
+                <div class="row justify-content-end">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <button class="btn btn-brand btn-block white-text" data-toggle="modal" data-target="#addUserModal">add new user</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-5">
+                        <div class="table-responsive">
+                            <table class="table table-hover border border-light f-18">
+                                <thead class="bg-light">
+                                    <tr>
+                                        <th scope="col">s/n</th>
+                                        <th scope="col">Full Name</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Group</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td scope="row">Adetoye Shina</td>
+                                        <td scope="row" class="text-success"> <span class="badge py-2 px-5 badge-success">ACTIVATED</span> </td>
+                                        <td scope="row"><span class="badge py-2 px-5 badge-secondary">STAFF</span></td>                                               
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">2</td>
+                                        <td scope="row">Adetoye Shina</td>
+                                        <td scope="row" class="text-success"> <span class="badge py-2 px-5 badge-info">PENDING</span> </td>
+                                        <td scope="row"><span class="badge py-2 px-5 badge-secondary">STUDENT</span></td>                                               
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">3</td>
+                                        <td scope="row">Adetoye Shina</td>
+                                        <td scope="row" class="text-success"> <span class="badge py-2 px-5 badge-success">ACTIVATED</span> </td>
+                                        <td scope="row"><span class="badge py-2 px-5 badge-secondary">STAFF</span></td>                                               
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Modal -->
+                <!-- Central Modal Small -->
+                <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                    <!-- Change class .modal-sm to change the size of the modal -->
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title w-100 brand-text fw-med" id="myModalLabel">CSMT E-Library New User</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="brand-text fw-med">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="email">Your Email</label>
+                                            <input type="email" id="email" name="email" class="form-control custom-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Your Password</label>
+                                            <input type="password" name="password" id="password" class="form-control custom-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="fullname">Full Name</label>
+                                            <input type="text" name="fullname" id="fullname" class="form-control custom-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="group">Group</label>
+                                            <select type="text" id="group" name="group" class="form-control custom-select">
+                                                <option disabled>--choose a group--</option>
+                                                <option value="staff">Staff</option>
+                                                <option value="student">Student</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group student-id">
+                                            <label for="studentid">Student ID</label>
+                                            <input type="text" id="student_id" name="student_id" class="form-control custom-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-brand">Add User</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark btn-md" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./ end modal -->
+            </div>
+        </main>
+        <!-- main -->
+        <!-- Footer -->
+        <footer class="page-footer  bg-brand pt-4">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="w-100p" alt="">
+                            </a>
+                        </h5>
+                        <p>CSMT: The school for your child best interest</p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase">NOTICE BOARD</h5>
+                        <ul class="list-unstyled f-16">
+                            <li>
+                                <a href="">Admissions</a>
+                            </li>
+                            <li>
+                                <a href="">Entrance Exams</a>
+                            </li>
+                            <li>
+                                <a href="">School Trip</a>
+                            </li>
+                            <li>
+                                <a href="">Library</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Contact US</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p class="f-16">Suite 14 & 23 Ase complex, Vetenary junction, Mokola Ibadan, Oyo State Nigeria</p>
+                            </li>
+                            <li>
+                                <p class="f-16">hello@csmt.com</p>
+                            </li>
+                            <li>
+                                <p class="f-16">
+                                    08092816959 
+                                    <br>
+                                    08180997078
+                                </p>
+                            </li>
+                            
+                        </ul>
+        
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid row -->
+                </div>
+                <!-- Footer Links -->
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 f-16">© 2019 Copyright:
+                    <a href="https://mdbootstrap.com/education/bootstrap/"> CSMT.com</a>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+        <!-- ./footer -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+        <script>
+            $(document).ready( ()=> {
+                $("#group").on('change', (ev) => {
+                    console.log(ev.target.value);
+                    if(ev.target.value === 'student'){
+                        $(".student-id").css('display', 'block')
+                    }else{
+                        $('.student-id').css('display', 'none');
+                    }
+                });
+            });
+        </script>
+        
+    </body>
+</html>
