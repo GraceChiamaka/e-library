@@ -184,6 +184,14 @@ textarea{
 .pos-rel {
   position: relative;
 }
+.book-thumbnail{
+  height: 50px;
+  width: 100%;
+  background-image: url('../images/book_1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 @media (min-width: 767px) and (max-width: 990px) {
   .about-text {
     margin-top: 1rem;
